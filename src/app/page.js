@@ -61,8 +61,8 @@ export default function Home() {
         <div className="">
 
           <h2 className="inline-block mb-10 pl-4 pr-4 py-2 border-l-4 border-[var(--primary)] bg-gradient-to-r from-[var(--secondary)]/15 to-transparent">
-            Our
-            <span className="text-[var(--primary)]"> Services </span>
+            Why
+            <span className="text-[var(--primary)]"> Choose US </span>
           </h2>
 
         </div>
