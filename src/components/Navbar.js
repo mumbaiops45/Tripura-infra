@@ -15,13 +15,32 @@ const menuItems = [
   { name: "Contact Us", slug: "/contact", href: "/contact" },
 ];
 
+// ✅ UPDATED SERVICES LIST WITH SLUGS
 const servicesList = [
-  "Residential Construction",
-  "Commercial Construction",
-  "Industrial Construction",
-  "Interior Solution",
-  "Project Management",
-  "Renovation & Extension Work",
+  {
+    name: "Residential Construction",
+    slug: "residential",
+  },
+  {
+    name: "Commercial Construction",
+    slug: "commercial-construction",
+  },
+  {
+    name: "Industrial Construction",
+    slug: "industrial-construction",
+  },
+  {
+    name: "Interior Solution",
+    slug: "interior-solution",
+  },
+  {
+    name: "Project Management",
+    slug: "project-management",
+  },
+  {
+    name: "Renovation & Extension Work",
+    slug: "renovation-extension-work",
+  },
 ];
 
 const Navbar = () => {
@@ -73,18 +92,21 @@ const Navbar = () => {
                     {item.name} <ChevronDown size={16} />
                   </button>
 
+                  {/* DROPDOWN */}
                   <ul className="absolute left-0 mt-2 bg-white shadow-lg rounded-lg p-3 w-56 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300">
+                    
                     {servicesList.map((service, i) => (
                       <li key={i}>
                         <Link
-                          href="/services"
+                          href={`/services/${service.slug}`}
                           onClick={handleLinkClick}
-                          className="block px-3 py-2 rounded hover:bg-gray-100 hover:text-[var(--primary)] transition"
+                          className="block px-3 py-2 rounded text-black hover:bg-gray-100 hover:text-[var(--primary)] transition"
                         >
-                          {service}
+                          {service.name}
                         </Link>
                       </li>
                     ))}
+
                   </ul>
                 </div>
               ) : (
@@ -138,16 +160,17 @@ const Navbar = () => {
                     />
                   </button>
 
+                  {/* MOBILE DROPDOWN */}
                   {servicesOpen && (
                     <ul className="ml-4 mt-2 flex flex-col gap-2">
                       {servicesList.map((service, i) => (
                         <li key={i}>
                           <Link
-                            href="/services"
+                            href={`/services/${service.slug}`}
                             onClick={handleLinkClick}
                             className="block py-1 hover:text-[var(--primary)]"
                           >
-                            {service}
+                            {service.name}
                           </Link>
                         </li>
                       ))}
@@ -178,4 +201,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;
