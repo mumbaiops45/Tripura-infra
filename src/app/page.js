@@ -6,6 +6,7 @@ import OurPackages from "@/components/Package";
 import CardList from "@/components/CardList";
 import ClipPath from "@/components/ClipPath";
 import Process from "@/components/Process";
+import Testimonials from "@/components/Testimonial";
 
 const processSteps = [
   {
@@ -163,6 +164,7 @@ export default function Home() {
 
         </div>
         <Process processSteps={processSteps} />
+        <Testimonials />
       </section>
     </div>
   );

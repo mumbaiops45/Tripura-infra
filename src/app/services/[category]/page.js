@@ -13,8 +13,15 @@ const servicesData = [
         name: "Home",
         img: "/home.webp",
         title: "Custom Home Construction",
-        description:
-          "We provide end-to-end custom home construction tailored to your lifestyle, budget, and vision. From planning to handover, we ensure quality workmanship and a smooth experience.",
+        description: (
+          <>
+            We design and build <strong>personalized homes</strong> with superior materials, ensuring comfort, safety, and lasting structural strength.
+            <br />
+            Every home is crafted with <strong>attention to detail</strong>, combining functional layouts with modern aesthetics to create a space that truly feels like yours.
+            <br />
+            From foundation to finishing, we ensure <strong>high-quality workmanship, transparent pricing, and on-time delivery</strong> at every stage of construction.
+          </>
+        ),
         painPoints: {
           title: "Common Problems Homeowners Face",
           points: ["Budget overrun fear", "Bad contractors", "Delay in work", "Low quality materials"],
@@ -32,8 +39,15 @@ const servicesData = [
         name: "Luxury Villas",
         img: "/Luxury villas.webp",
         title: "Luxury Villa Construction",
-        description:
-          "We design and build premium villas with modern architecture, elegant finishes, and high-end living features.",
+        description: (
+          <>
+            We design and build <strong>premium luxury villas</strong> with elegant architecture, modern amenities, and high-quality finishes for a refined living experience.
+            <br />
+            Each villa is a reflection of exclusivity and sophistication, crafted with <strong>premium materials, custom designs, and smart home integration</strong> tailored to your lifestyle.
+            <br />
+            Our team ensures <strong>flawless execution, unique architectural character, and long-lasting value</strong> in every luxury project we undertake.
+          </>
+        ),
         painPoints: {
           title: "Luxury Construction Challenges",
           points: ["Overpriced construction", "Poor finishing quality", "Lack of unique design"],
@@ -51,8 +65,15 @@ const servicesData = [
         name: "Residential Apartments",
         img: "/Residential Appartments.webp",
         title: "Apartment Construction",
-        description:
-          "We construct apartment buildings with strong structure, efficient layouts, and full compliance with regulations.",
+        description: (
+          <>
+            We construct <strong>thoughtfully planned residential apartments</strong> combining space efficiency, elegant interiors, and durable construction quality.
+            <br />
+            Our approach focuses on <strong>optimized layouts, structural integrity, and modern design</strong> to deliver buildings that meet both investor expectations and resident comfort.
+            <br />
+            From planning and approvals to final execution, we ensure <strong>safe, scalable, and cost-effective development</strong> delivered on schedule.
+          </>
+        ),
         painPoints: {
           title: "Developer Concerns",
           points: ["Safety issues", "Project delays", "Budget mismanagement"],
@@ -70,7 +91,15 @@ const servicesData = [
         name: "Row Houses",
         img: "/Row Houses.webp",
         title: "Row House Construction",
-        description: "We build row houses designed for efficient space utilization and modern community living.",
+        description: (
+          <>
+            We build <strong>smartly designed row villas</strong> offering privacy, natural light, and functional layouts that balance comfort and style.
+            <br />
+            Our designs focus on <strong>efficient space utilization, modern aesthetics, and community-focused living</strong>, making each unit both practical and visually appealing.
+            <br />
+            With consistent quality across all units, we deliver <strong>durable, affordable, and premium row house solutions</strong> that hold strong resale value.
+          </>
+        ),
         painPoints: {
           title: "Buyer Concerns",
           points: ["Poor layouts", "Low resale value", "Inconsistent quality"],
@@ -95,7 +124,15 @@ const servicesData = [
         name: "High-Rise Towers",
         img: "/High-Rise Towers.webp",
         title: "High-Rise Construction",
-        description: "We develop high-rise commercial buildings with advanced engineering ensuring safety and durability.",
+        description: (
+          <>
+            We develop <strong>high-rise commercial buildings</strong> with engineering excellence in tall structures, precision design, superior materials, and modern architectural appeal.
+            <br />
+            Our team handles everything from <strong>structural engineering and regulatory approvals to full execution management</strong>, ensuring safety at every level.
+            <br />
+            We deliver projects that meet <strong>modern urban demands with timely completion and strict compliance</strong> to all building standards.
+          </>
+        ),
         painPoints: {
           title: "Project Challenges",
           points: ["Safety risks", "Approval delays", "Execution delays"],
@@ -113,7 +150,15 @@ const servicesData = [
         name: "Retail Spaces",
         img: "/Retail Spaces.webp",
         title: "Retail Space Construction",
-        description: "We build retail spaces designed to attract customers and maximize business efficiency.",
+        description: (
+          <>
+            We build <strong>modern retail and shopping hubs</strong> designed for functionality, visibility, and long-term business growth.
+            <br />
+            Our layouts are crafted to <strong>maximize customer flow, brand visibility, and efficient space usage</strong>, helping businesses create impactful and memorable shopping environments.
+            <br />
+            From shop fit-outs to large retail complexes, we deliver <strong>attractive, durable, and brand-focused commercial spaces</strong> built for performance.
+          </>
+        ),
         painPoints: {
           title: "Retail Issues",
           points: ["Poor layout", "Low customer flow"],
@@ -131,7 +176,15 @@ const servicesData = [
         name: "Hospital Construction",
         img: "/Hospital Construction.webp",
         title: "Healthcare Facility Construction",
-        description: "We construct hospitals with patient-centric layouts, safety compliance, and modern medical infrastructure.",
+        description: (
+          <>
+            We construct <strong>safe, compliant, and efficiently designed healthcare facilities</strong> with smart planning and durable infrastructure built for long-term use.
+            <br />
+            Our patient-centric layouts incorporate <strong>medical equipment integration, hygienic design standards, and strict regulatory compliance</strong> at every stage.
+            <br />
+            From small clinics to large hospital complexes, we deliver <strong>functional, safe, and future-ready healthcare infrastructure</strong> tailored to operational needs.
+          </>
+        ),
         painPoints: {
           title: "Healthcare Challenges",
           points: ["Regulatory compliance", "Medical equipment integration", "Hygiene standards"],
@@ -149,7 +202,15 @@ const servicesData = [
         name: "P.G. Hostels",
         img: "/P.G. Hostels.webp",
         title: "Hostel Construction",
-        description: "We build P.G. and student hostels with functional designs, safety, and comfort for residents.",
+        description: (
+          <>
+            We build <strong>comfortable, cost-effective, and low-maintenance hostel buildings</strong> designed for maximum utility and space optimization.
+            <br />
+            Our functional layouts prioritize <strong>resident safety, efficient room design, and shared space management</strong> to create a secure and convenient living environment.
+            <br />
+            Every hostel we construct is built with <strong>durable materials, smart planning, and easy-to-maintain finishes</strong> for long-term operational efficiency.
+          </>
+        ),
         painPoints: {
           title: "Hostel Concerns",
           points: ["Safety", "Efficient layouts", "Maintenance"],
@@ -174,7 +235,15 @@ const servicesData = [
         name: "Industrial Civil Works",
         img: "/Industrial Civil Works.webp",
         title: "Industrial Civil Construction",
-        description: "We handle heavy civil works for industrial plants with structural precision and safety compliance.",
+        description: (
+          <>
+            We handle <strong>end-to-end civil construction for industrial facilities</strong> with robust foundations, heavy-duty structures, and precision engineering.
+            <br />
+            Our team manages <strong>structural planning, safety compliance, and project supervision</strong> to ensure every industrial build meets the highest durability standards.
+            <br />
+            With a focus on <strong>efficient timelines and regulatory adherence</strong>, we deliver industrial civil projects that are built to perform under demanding conditions.
+          </>
+        ),
         painPoints: {
           title: "Industrial Challenges",
           points: ["Safety risks", "Heavy machinery handling", "Timeline delays"],
@@ -192,7 +261,15 @@ const servicesData = [
         name: "PEB Sheds",
         img: "/PEB Sheds.webp",
         title: "Pre-Engineered Building Sheds",
-        description: "We build PEB sheds for industrial storage, workshops, and manufacturing setups.",
+        description: (
+          <>
+            We construct <strong>durable, cost-effective steel shed solutions</strong> designed for quick installation and long-term performance across industrial and storage applications.
+            <br />
+            Our pre-engineered building systems offer <strong>custom layouts, optimized structural design, and fast assembly</strong> without compromising on strength or quality.
+            <br />
+            From material selection to installation supervision, we deliver <strong>reliable PEB sheds that maximize usable space</strong> and minimize construction time.
+          </>
+        ),
         painPoints: {
           title: "PEB Shed Issues",
           points: ["Structural stability", "Material sourcing", "Timely delivery"],
@@ -206,42 +283,6 @@ const servicesData = [
           items: ["Durable sheds", "Optimized layout", "Quick assembly"],
         },
       },
-      {
-        name: "Warehouses",
-        img: "/Warehouses.webp",
-        title: "Warehouse Construction",
-        description: "We construct warehouses with optimal storage layouts, safety, and logistic efficiency.",
-        painPoints: {
-          title: "Warehouse Issues",
-          points: ["Poor layout", "Insufficient capacity", "Delayed delivery"],
-          solution: "We provide well-planned, scalable, and timely-built warehouses.",
-        },
-        services: {
-          title: "What You Get",
-          items: ["Storage planning", "Structural strength", "Compliance management"],
-        },
-        features: {
-          items: ["Efficient layout", "Durable construction", "Scalable design"],
-        },
-      },
-      {
-        name: "Banquet Halls",
-        img: "/Banquet Halls.webp",
-        title: "Banquet Hall Construction",
-        description: "We design and build banquet halls with elegant interiors, functional layouts, and high-capacity features.",
-        painPoints: {
-          title: "Event Space Challenges",
-          points: ["Acoustics", "Space optimization", "Interior design quality"],
-          solution: "We ensure functional layouts, premium finishing, and optimal acoustics.",
-        },
-        services: {
-          title: "What You Get",
-          items: ["Space planning", "Interior design", "Functional layout management"],
-        },
-        features: {
-          items: ["Elegant interiors", "Optimized space", "Durable finishing"],
-        },
-      },
     ],
   },
   {
@@ -253,7 +294,15 @@ const servicesData = [
         name: "Residential Interiors",
         img: "/Residential Interiors.webp",
         title: "Residential Interior Design",
-        description: "We create beautiful and functional interiors for homes, reflecting personal style and comfort.",
+        description: (
+          <>
+            We create <strong>elegant, functional, and personalized interior designs</strong> that enhance comfort, style, and everyday living in your home.
+            <br />
+            Our team works closely with you to develop <strong>thoughtful layouts, curated material palettes, and cohesive design themes</strong> that reflect your personality and lifestyle.
+            <br />
+            From living rooms to bedrooms and kitchens, we deliver <strong>beautiful, organized, and budget-conscious interiors</strong> that transform your space into a place you love.
+          </>
+        ),
         painPoints: {
           title: "Interior Challenges",
           points: ["Cluttered layouts", "Poor aesthetics", "Budget constraints"],
@@ -265,74 +314,6 @@ const servicesData = [
         },
         features: {
           items: ["Stylish interiors", "Functional spaces", "Budget-conscious planning"],
-        },
-      },
-      {
-        name: "Commercial Interiors",
-        img: "/Commercial Interiors.webp",
-        title: "Commercial Interior Design",
-        description: "We design commercial interiors for offices, retail, and hospitality to enhance functionality and branding.",
-        painPoints: {
-          title: "Commercial Interior Issues",
-          points: ["Low productivity layouts", "Brand inconsistency", "Poor lighting"],
-          solution: "We create functional, brand-aligned, and well-lit spaces.",
-        },
-        services: {
-          title: "What You Get",
-          items: ["Brand-focused design", "Functional layouts", "Lighting solutions"],
-        },
-        features: {
-          items: ["Optimized workspace", "Consistent branding", "Modern aesthetics"],
-        },
-      },
-    ],
-  },
-  {
-    id: "05",
-    title: "Project Management",
-    slug: "project-management",
-    items: [
-      {
-        name: "Project Management",
-        img: "/Project Management.webp",
-        title: "End-to-End Project Management",
-        description: "We manage construction projects from concept to completion, ensuring quality, budget, and timelines are met.",
-        painPoints: {
-          title: "Management Challenges",
-          points: ["Coordination issues", "Budget overruns", "Timeline delays"],
-          solution: "We provide structured project management with real-time updates and accountability.",
-        },
-        services: {
-          title: "What You Get",
-          items: ["Planning & scheduling", "Resource management", "Budget monitoring", "Quality assurance"],
-        },
-        features: {
-          items: ["Dedicated project manager", "Real-time updates", "Cost control", "End-to-end execution"],
-        },
-      },
-    ],
-  },
-  {
-    id: "06",
-    title: "Renovation & Extension Work",
-    slug: "renovation-extension-work",
-    items: [
-      {
-        name: "Extension Work",
-        img: "/Extension Work.webp",
-        title: "Home Extension & Renovation",
-        description: "We extend and renovate homes and commercial spaces with minimal disruption, ensuring style and function.",
-        painPoints: {
-          title: "Renovation Challenges",
-          points: ["Space utilization", "Structural safety", "Design compatibility"],
-          solution: "We provide safe, functional, and aesthetically pleasing extensions.",
-        },
-        services: {
-          title: "What You Get",
-          items: ["Structural assessment", "Design & planning", "Construction management", "Finishing supervision"],
-        },
-        features: {
-          items: ["Safe construction", "Seamless integration", "Modern design", "Durable finishing"],
         },
       },
     ],
@@ -365,30 +346,30 @@ export default async function ServiceCategoryPage({ params }) {
   if (!service) return notFound();
 
   return (
-    <main className="mt-[80px] pb-20">
+    <main className="mt-16 pb-20">
 
       {/* PAGE HERO */}
-      <div className="  px-4 text-center text-[var(--primary)]">
-        <h1 className="text-3xl md:text-5xl font-bold mb-3">{service.title}</h1>
-        <p className="text-white/80 text-sm md:text-base max-w-xl mx-auto">
+      <div className="  px-4 text-center">
+        <h1 className="text-[var(--primary)] mb-3">{service.title}</h1>
+        <p className="  mx-auto">
           Explore our range of {service.title.toLowerCase()} solutions built
           for quality, reliability, and your unique needs.
         </p>
       </div>
 
       {/* ITEMS */}
-      <div className="max-w-7xl mx-auto px-4 flex flex-col gap-24 py-16">
+      <div className="max-w-7xl mx-auto px-4 flex flex-col gap-8 py-16">
         {service.items.map((item, index) => (
           <section key={index} className="flex flex-col gap-10">
 
             {/* H2 — Item Name */}
             <div className="flex items-center gap-4">   
-               <h2 className="inline-block mb-10 pl-4 pr-4 py-2 border-l-4 border-[var(--primary)] bg-gradient-to-r from-[var(--secondary)]/15 to-transparent">
+               <h2 className="inline-block  pl-4 pr-4 py-2 border-l-4 border-[var(--primary)] bg-gradient-to-r from-[var(--secondary)]/15 to-transparent">
                   
                     <span className="text-[var(--primary)]"> {item.name} </span>
                 </h2>
              
-              <div className="flex-1 h-[1px] bg-gray-200" />
+             
             </div>
 
             {/* TOP: Image Left + Title/Description Right */}
@@ -422,7 +403,7 @@ export default async function ServiceCategoryPage({ params }) {
               {/* Card 1 — Pain Points */}
               <div className=" border border-red-100 rounded-xl p-5 flex flex-col gap-3">
                 <div className="flex items-center gap-2">
-                  <span className="w-3 h-3 rounded-full  inline-block shrink-0" />
+                  <span className="w-3 h-3 rounded-full bg-black inline-block shrink-0" />
                   <h4 className="font-semibold  text-sm md:text-base">
                     {item.painPoints.title}
                   </h4>

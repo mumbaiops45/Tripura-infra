@@ -36,46 +36,45 @@ const OurPackages = () => {
 
   return (
     <section className="py-16 px-4 md:px-16 bg-gradient-to-b from-[var(--primary)]/5 to-transparent ">
-      
+
       <h2 className="text-center mb-10 pl-4 pr-4 py-2 ">
         Our <span className="text-[var(--primary)]">Packages</span>
       </h2>
 
       {/* Layout */}
       <div className="grid grid-cols-1 md:grid-cols-[260px_1fr] gap-8">
-        
+
         {/* LEFT SIDEBAR */}
         <div>
-            <p className="mb-2 font-bold text-[var(--primery)]">
-  click to see packages
-</p>
-            <div className="md:h-full flex md:flex-col gap-3 overflow-x-auto md:overflow-visible">
-          {[
-            { key: "residential", label: "Residential Construction" },
-            { key: "commercial", label: "Commercial" },
-            { key: "villas", label: "Luxury Villas" },
-          ].map((item) => (
-            <button
-              key={item.key}
-              onClick={() => setActive(item.key)}
-              className={`backdrop-blur-xl px-4 py-3 md:h-[30%] text-left rounded-lg border transition whitespace-nowrap
-                ${
-                  active === item.key
+          <p className="mb-2 font-bold text-[var(--primery)]">
+            click to see packages
+          </p>
+          <div className="md:h-full flex md:flex-col gap-3 overflow-x-auto md:overflow-visible">
+            {[
+              { key: "residential", label: "Residential Construction" },
+              { key: "commercial", label: "Commercial" },
+              { key: "villas", label: "Luxury Villas" },
+            ].map((item) => (
+              <button
+                key={item.key}
+                onClick={() => setActive(item.key)}
+                className={`backdrop-blur-xl px-4 py-3 md:h-[30%] text-left rounded-lg border transition whitespace-nowrap
+                ${active === item.key
                     ? "bg-[var(--primary)] text-white"
                     : "bg-white"
-                }`}
-            >
-              {item.label}
-            </button>
-          ))}
+                  }`}
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
         </div>
-        </div>
-        
+
 
         {/* RIGHT TABLE */}
         <div className="overflow-x-auto">
           <table className="w-full border border-black rounded-xl overflow-hidden">
-            
+
             {/* Header */}
             <thead className="bg-[var(--primary)] text-white">
               <tr className="text-[var(--primery)] text-lg md:text-xl font-bold">
