@@ -8,9 +8,9 @@ import { Menu, X, ChevronDown } from "lucide-react";
 
 const menuItems = [
   { name: "Home", slug: "/", href: "/" },
-  { name: "About Us", slug: "/about", href: "/about-us" },
+  { name: "About Us", slug: "/about-us", href: "/about-us" },
   { name: "Our Services", slug: "/services", href: "/services" },
-  // { name: "Why Choose Us", slug: "/why-us", href: "/why-us" },
+  { name: "How We Work", slug: "/working-process", href: "/working-process" },
   { name: "Our Packages", slug: "/packages", href: "/packages" },
   { name: "Contact Us", slug: "/contact", href: "/contact" },
 ];

@@ -132,7 +132,7 @@ export default function Home() {
       <About />
       <Services />
       <OurPackages />
-      <section id='Why_Us' className="Why_Us scroll-mt-10 w-full py-15 px-15">
+      <section id='Why_Us' className="Why_Us  w-full py-15 px-6 md:px-15">
         <div className="">
 
           <h2 className="inline-block mb-10 pl-4 pr-4 py-2 border-l-4 border-[var(--primary)] bg-gradient-to-r from-[var(--secondary)]/15 to-transparent">
@@ -143,7 +143,7 @@ export default function Home() {
         </div>
         <CardList cards={cardData} />
       </section>
-      <section id='complate_project' className="Why_Us scroll-mt-10 w-full py-15 px-15">
+      <section id='' className="complate_project w-full py-15 px-6 md:px-15">
         <div className="">
 
           <h2 className="inline-block mb-10 pl-4 pr-4 py-2 border-l-4 border-[var(--primary)] bg-gradient-to-r from-[var(--secondary)]/15 to-transparent">
@@ -154,7 +154,7 @@ export default function Home() {
         </div>
         <ClipPath cards={Project} />
       </section>
-      <section className="Process bg-gradient-to-b from-[var(--secondary)]/5 to-transparent  w-full py-20 px-6 ">
+      <section className="Process bg-gradient-to-b from-[var(--secondary)]/5 to-transparent  w-full py-20 px-6 md:px-15 ">
         <div className="max-w-6xl mx-auto flex items-center justify-center">
 
           <h2 className="mb-10 text-center text-gray-900">Project Execution
@@ -164,8 +164,9 @@ export default function Home() {
 
         </div>
         <Process processSteps={processSteps} />
-        <Testimonials />
+        
       </section>
+      <Testimonials />
     </div>
   );
 }

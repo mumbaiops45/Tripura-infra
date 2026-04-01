@@ -19,11 +19,7 @@ export default function CardList({ cards }) {
                         />
 
                         <h3
-                            className="relative font-semibold text-gray-900 leading-snug
-after:content-[''] after:absolute after:left-0 after:-bottom-1.5
-after:h-[2px] after:w-1/4 after:bg-[var(--secondary)]
-after:transition-all after:duration-300
-group-hover:after:w-1/2"
+                            className="relative font-semibold text-gray-900 leading-snug after:content-[''] after:absolute after:left-0 after:-bottom-1.5 after:h-[2px] after:w-1/4 after:bg-[var(--secondary)] after:transition-all after:duration-300 group-hover:after:w-1/2"
                         >
                             {card.heading}
                         </h3>

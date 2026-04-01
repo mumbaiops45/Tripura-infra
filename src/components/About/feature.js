@@ -35,7 +35,7 @@ const whyChooseData = [
 
 const WhyChooseSection = () => {
   return (
-    <section className="py-16 px-6 md:px-12 lg:px-[100px] bg-white">
+    <section className="py-16 px-6 md:px-15 lg:px-[100px] bg-white">
 
       {/* HEADING */}
       <div className="mb-12">
@@ -59,7 +59,7 @@ const WhyChooseSection = () => {
           >
 
             {/* CIRCLE */}
-            <div className="px-6 h-20 md:h-24 flex items-center justify-center rounded-xl bg-[var(--primary)] text-white text-xl md:text-2xl font-bold shadow-md group-hover:scale-105 transition">
+            <div className="px-5 h-20 md:h-14 flex items-center justify-center rounded-xl bg-[var(--primary)] text-white text-xl md:text-2xl font-bold shadow-md group-hover:scale-105 transition">
               {item.id}
             </div>
 

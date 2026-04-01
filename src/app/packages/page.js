@@ -54,7 +54,7 @@ export default function PackagesPage() {
       {/* HERO BANNER */}
       <section className="relative py-16 px-6 md:px-12 overflow-hidden bg-gradient-to-br from-white via-red-50 to-white">
         {/* Decorative circles */}
-       
+
 
         <h1
           className="text-center mb-4"
@@ -63,8 +63,8 @@ export default function PackagesPage() {
         </h1>
 
         <p
-          className="text-center text-black max-w-xl mx-auto text-base md:text-lg"
-          
+          className="text-center text-black max-w-xl mx-auto"
+
         >
           Transparent pricing with no hidden costs. Choose the package that fits your vision and budget.
         </p>
@@ -74,7 +74,7 @@ export default function PackagesPage() {
       <section className="pt-16 md:pt-24 pb-12 px-4 md:px-16 max-w-7xl mx-auto">
         <h2
           className="inline-block mb-10 pl-4 pr-6 py-2 border-l-4 border-[var(--primary)] bg-gradient-to-r from-[var(--secondary)]/15 to-transparent"
-          
+
         >
           Explore Our <span className="text-[var(--primary)]">Packages</span>
         </h2>
@@ -89,14 +89,13 @@ export default function PackagesPage() {
                   onClick={() => setActive(item.key)}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  initial={{ opacity: 0, x: -20 }}
+                  initial={{ opacity: 0, x: 0 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: idx * 0.1 + 0.2, duration: 0.4 }}
-                  className={`relative flex items-center gap-2 px-6 py-6 md:py-5 text-left rounded-xl border transition-all duration-300 whitespace-nowrap md:whitespace-normal overflow-hidden font-semibold text-sm md:text-base shadow-sm ${
-                    active === item.key
+                  className={`relative flex items-center gap-2 px-6 py-6 md:py-5 text-left rounded-xl border transition-all duration-300 whitespace-nowrap md:whitespace-normal overflow-hidden font-semibold text-sm md:text-base shadow-sm ${active === item.key
                       ? "bg-[var(--primary)] text-white border-[var(--primary)] shadow-[0_4px_20px_rgba(192,57,43,0.3)]"
                       : "bg-white text-gray-800 border-gray-200"
-                  }`}
+                    }`}
                 >
                   {active === item.key && <span className="absolute left-0 top-0 h-full w-1 rounded-l-xl bg-white/30" />}
                   {item.icon}
@@ -109,7 +108,7 @@ export default function PackagesPage() {
           {/* RIGHT TABLE */}
           <AnimatePresence mode="wait">
             <motion.div
-            className="mb-10"
+              className="mb-10"
               key={active}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

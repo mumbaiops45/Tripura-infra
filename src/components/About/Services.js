@@ -62,7 +62,7 @@ const ServicesLayout = () => {
   );
 
   return (
-    <section className="py-16 px-6 md:px-12 bg-gradient-to-b from-[var(--primary)]/5 to-transparent">
+    <section className="py-16 px-6 md:px-15 bg-gradient-to-b from-[var(--primary)]/5 to-transparent">
       
       {/* HEADING */}
       <h2 className="inline-block mb-10 pl-4 pr-4 py-2 border-l-4 border-[var(--primary)] bg-gradient-to-r from-[var(--secondary)]/15 to-transparent">
@@ -105,15 +105,15 @@ const ServicesLayout = () => {
                 {activeService.items.map((subItem, i) => (
                   <div
                     key={i}
-                    className="flex items-center gap-4 md:gap-5 border border-gray-200 rounded-xl p-4 hover:shadow-md transition"
+                    className="flex flex-col items-center gap-4 md:gap-3 border border-gray-200 rounded-xl p-4 hover:shadow-md transition"
                   >
                     {/* IMAGE */}
-                    <div className="relative w-16 h-16 md:w-20 md:h-20 rounded-lg overflow-hidden shrink-0">
+                    <div className="relative w-16 h-16 md:w-full md:h-52 rounded-lg overflow-hidden shrink-0">
                       <Image
                         src={subItem.img}
                         alt={subItem.name}
                         fill
-                        className="object-cover"
+                        className="object-fill"
                       />
                     </div>
 

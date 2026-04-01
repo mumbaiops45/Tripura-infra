@@ -318,6 +318,72 @@ const servicesData = [
       },
     ],
   },
+  {
+    id: "05",
+    title: "Project Management",
+    slug: "project-management",
+    items: [
+      {
+        name: "Construction Oversight",
+        img: "/Project Management.webp",
+        title: "Project Management Services",
+        description: (
+          <>
+            We provide <strong>end-to-end project management</strong> for construction projects ensuring timely delivery, quality control, and budget adherence.
+            <br />
+            Our team monitors every stage from planning to execution, coordinating contractors, suppliers, and stakeholders to achieve seamless project delivery.
+            <br />
+            Focused on efficiency and transparency, we deliver projects with <strong>reduced risks and optimized outcomes</strong>.
+          </>
+        ),
+        painPoints: {
+          title: "Management Challenges",
+          points: ["Miscommunication", "Delays", "Cost overruns"],
+          solution: "Our proactive monitoring and structured reporting eliminate management risks and ensure smooth execution.",
+        },
+        services: {
+          title: "What You Get",
+          items: ["Planning & scheduling", "Contractor coordination", "Budget tracking", "Quality monitoring"],
+        },
+        features: {
+          items: ["Experienced PMs", "Transparent reporting", "Risk mitigation", "End-to-end oversight"],
+        },
+      },
+    ],
+  },
+  {
+    id: "06",
+    title: "Renovation & Extension Work",
+    slug: "renovation-extension-work",
+    items: [
+      {
+        name: "Home Renovation",
+        img: "/Renovation.webp",
+        title: "Renovation & Extension Services",
+        description: (
+          <>
+            We offer <strong>comprehensive renovation and extension solutions</strong> for residential and commercial spaces.
+            <br />
+            Our team updates layouts, modernizes finishes, and expands usable space while maintaining structural integrity.
+            <br />
+            Ensuring minimal disruption, we deliver <strong>transformative, functional, and high-quality upgrades</strong> that enhance your property value.
+          </>
+        ),
+        painPoints: {
+          title: "Renovation Challenges",
+          points: ["Disruption to daily life", "Structural complications", "Budget management"],
+          solution: "We carefully plan and execute renovations to minimize inconvenience while ensuring top-quality results.",
+        },
+        services: {
+          title: "What You Get",
+          items: ["Structural assessment", "Design updates", "Space optimization", "Material selection guidance"],
+        },
+        features: {
+          items: ["Efficient execution", "Minimal disruption", "Quality finishes", "Functional design"],
+        },
+      },
+    ],
+  },
 ];
 
 // ✅ generateStaticParams stays the same
@@ -346,11 +412,14 @@ export default async function ServiceCategoryPage({ params }) {
   if (!service) return notFound();
 
   return (
-    <main className="mt-16 pb-20">
+    <main className=" pb-20">
 
       {/* PAGE HERO */}
-      <div className="  px-4 text-center">
-        <h1 className="text-[var(--primary)] mb-3">{service.title}</h1>
+      <div className="text-center pb-15 py-16 bg-gradient-to-br from-white via-[var(--primary)]/10 to-white">
+        
+        <h1 className="">
+          <span className="text-[var(--primary)]">{service.title}</span>
+        </h1>
         <p className="  mx-auto">
           Explore our range of {service.title.toLowerCase()} solutions built
           for quality, reliability, and your unique needs.
@@ -358,7 +427,7 @@ export default async function ServiceCategoryPage({ params }) {
       </div>
 
       {/* ITEMS */}
-      <div className="max-w-7xl mx-auto px-4 flex flex-col gap-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 md:px-15 flex flex-col gap-8 py-16">
         {service.items.map((item, index) => (
           <section key={index} className="flex flex-col gap-10">
 
@@ -371,6 +440,7 @@ export default async function ServiceCategoryPage({ params }) {
              
              
             </div>
+            
 
             {/* TOP: Image Left + Title/Description Right */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
