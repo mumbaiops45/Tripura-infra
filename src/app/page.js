@@ -7,6 +7,7 @@ import CardList from "@/components/CardList";
 import ClipPath from "@/components/ClipPath";
 import Process from "@/components/Process";
 import Testimonials from "@/components/Testimonial";
+import ContactForm from "@/components/Form";
 
 const processSteps = [
   {
@@ -126,6 +127,7 @@ const cardData = [
 ];
 
 export default function Home() {
+
   return (
     <div>
       <Hero />
@@ -164,9 +166,25 @@ export default function Home() {
 
         </div>
         <Process processSteps={processSteps} />
-        
+
       </section>
       <Testimonials />
+      <section id='' className="complate_project w-full py-15 px-6 md:px-15">
+        <div className="pb-10">
+
+          <h2 className="inline-block mb-10 pl-4 pr-4 py-2 border-l-4 border-[var(--primary)] bg-gradient-to-r from-[var(--secondary)]/15 to-transparent">
+
+            <span className="text-[var(--primary)]"> Contact </span>Us
+          </h2>
+
+         
+
+
+          <ContactForm />
+        </div>
+
+      </section>
+       
     </div>
   );
 }

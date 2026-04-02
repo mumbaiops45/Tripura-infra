@@ -1,6 +1,10 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import FooterDesygn from "@/components/FooterDesygn";
+import ScrollToTop from "@/components/ScrollToTop";
+import WhatsappChat from "@/components/WhatsappChat";
+import ScrollProgress from "@/components/ScrollProgress";
 
 
 export const metadata = {
@@ -9,16 +13,22 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+ 
+
   return (
     <html
       lang="en"
       className={``}
     >
       <body className="min-h-full flex flex-col">
+         <ScrollProgress />  
         <Navbar />
        <main className="pt-[80px] flex-grow">
     {children}
   </main>
+  <FooterDesygn />
+   <ScrollToTop/>
+     <WhatsappChat/>
         <Footer />
         </body>
     </html>

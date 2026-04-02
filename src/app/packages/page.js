@@ -62,27 +62,29 @@ export default function PackagesPage() {
           Our <span className="text-[var(--primary)]">Packages</span>
         </h1>
 
-        <p
-          className="text-center text-black max-w-xl mx-auto"
-
-        >
-          Transparent pricing with no hidden costs. Choose the package that fits your vision and budget.
-        </p>
+       
       </section>
 
       {/* PACKAGES SECTION */}
-      <section className="pt-16 md:pt-24 pb-12 px-4 md:px-16 max-w-7xl mx-auto">
+      <section className="pt-16 md:pt-24 pb-12 px-4 md:px-16 max-w-7xl ">
         <h2
-          className="inline-block mb-10 pl-4 pr-6 py-2 border-l-4 border-[var(--primary)] bg-gradient-to-r from-[var(--secondary)]/15 to-transparent"
+          className="inline-block mb-5 pl-4 pr-6 py-2 border-l-4 border-[var(--primary)] bg-gradient-to-r from-[var(--secondary)]/15 to-transparent"
 
         >
           Explore Our <span className="text-[var(--primary)]">Packages</span>
         </h2>
+         <p
+          className=" text-black mb-10  "
+
+        >
+          Transparent pricing with no hidden costs. Choose the package that fits your vision and budget.
+        </p>
+        
 
         <div className="grid grid-cols-1 gap-8 md:gap-12">
           {/* LEFT SIDEBAR */}
           <div>
-            <div className="flex flex-col md:flex-row justify-center gap-6  pb-2 md:pb-12">
+            <div className="flex flex-col md:flex-row justify-center gap-6  pb-2 md:pb-4">
               {tabs.map((item, idx) => (
                 <motion.button
                   key={item.key}

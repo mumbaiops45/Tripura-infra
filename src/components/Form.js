@@ -103,7 +103,7 @@ export default function ContactForm() {
                 onChange={handleChange}
                 required
                 placeholder="Enter your name"
-                className="w-full border border-gray-300 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:border-[var(--primary)]"
+                className="w-[80vw] md:w-full border border-gray-300 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:border-[var(--primary)]"
               />
             </div>
 
@@ -114,7 +114,7 @@ export default function ContactForm() {
                 onChange={handleChange}
                 required
                 placeholder="Enter your email"
-                className="w-full border border-gray-300 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:border-[var(--primary)]"
+                className="w-[80vw] md:w-full border border-gray-300 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:border-[var(--primary)]"
               />
               {error && (
                 <p className="text-red-500 text-xs mt-1">{error}</p>
@@ -129,13 +129,13 @@ export default function ContactForm() {
                 required
                 rows="4"
                 placeholder="Write your message..."
-                className="w-full border border-gray-300 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:border-[var(--primary)]"
+                className="w-[80vw] md:w-full border border-gray-300 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:border-[var(--primary)]"
               />
             </div>
 
             <button
               type="submit"
-              className="w-full bg-[var(--primary)] text-white py-3 rounded-lg font-semibold hover:opacity-90 transition"
+              className="w-[80vw] md:w-full bg-[var(--primary)] text-white py-3 rounded-lg font-semibold hover:opacity-90 transition"
             >
               Send Message
             </button>

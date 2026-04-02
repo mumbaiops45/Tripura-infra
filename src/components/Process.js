@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Process = ({ processSteps }) => {
     return (
-        <div className='grid grid-cols-1 md:grid-cols-3  px-15 gap-x-10 gap-y-20 pb-6'>
+        <div className='grid grid-cols-1 md:grid-cols-3 px-0 md:px-0 gap-x-10 gap-y-12 md:gap-y-20 pb-6'>
             {processSteps.map((item, index) => {
                 return (
                     <div
@@ -17,7 +17,7 @@ const Process = ({ processSteps }) => {
                             <div className="group mx-auto relative  flex items-center [backface-visibility:hidden]">
 
                                 {/* CARD */}
-                                <div className="w-full h-full bg-white rounded-md shadow-md hover:shadow-xl transition relative overflow-hidden px-10 py-5">
+                                <div className="w-full h-[45vh] bg-white rounded-md shadow-md hover:shadow-xl transition relative overflow-hidden px-10 pt-5">
 
                                     {/* INDEX (half visible because of overflow-hidden on card) */}
                                     <div className='flex justify-center items-center'>

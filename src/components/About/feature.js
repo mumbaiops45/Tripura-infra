@@ -35,7 +35,7 @@ const whyChooseData = [
 
 const WhyChooseSection = () => {
   return (
-    <section className="py-16 px-6 md:px-15 lg:px-[100px] bg-white">
+    <section className="py-16 px-6 md:px-15 lx bg-white">
 
       {/* HEADING */}
       <div className="mb-12">

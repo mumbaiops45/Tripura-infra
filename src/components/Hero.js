@@ -9,6 +9,7 @@ const slides = [
     tag: "Construction",
     title: "Building Strong Foundations",
     description: "We deliver high-quality construction solutions.",
+    poster:"/poster.png",
     button: "Explore",
   },
   {
@@ -17,6 +18,7 @@ const slides = [
     tag: "Commercial",
     title: "Modern Commercial Spaces",
     description: "We build spaces for business growth.",
+     poster:"/poster.png",
     button: "View Projects",
   },
   {
@@ -25,6 +27,7 @@ const slides = [
     tag: "Residential",
     title: "Your Dream Home",
     description: "We create beautiful living spaces.",
+     poster:"/poster.png",
     button: "Get Quote",
   },
 ];
@@ -46,6 +49,19 @@ const Hero = () => {
 
     return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+  const handleVisibility = () => {
+    if (document.hidden) {
+      videoRefs.current[current]?.pause();
+    } else {
+      videoRefs.current[current]?.play().catch(() => {});
+    }
+  };
+
+  document.addEventListener("visibilitychange", handleVisibility);
+  return () => document.removeEventListener("visibilitychange", handleVisibility);
+}, [current]);
 
   // Reset loop
   useEffect(() => {
@@ -86,15 +102,16 @@ const Hero = () => {
           <div key={index} className="w-full flex-shrink-0 relative h-full">
 
             {/* ✅ Video FIX */}
-            <video
-              ref={(el) => (videoRefs.current[index] = el)}
-              src={slide.video}
-              muted
-              loop
-              playsInline
-              preload="auto"
-              className="w-full h-full object-cover"
-            />
+          <video
+  ref={(el) => (videoRefs.current[index] = el)}
+ src={index === current ? slide.video : undefined}
+  muted
+  loop
+  playsInline
+  preload="none"  
+    poster={slide.poster}  // ✅ IMPORTANT
+  className="w-full h-full object-cover"
+/>
 
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/40"></div>
