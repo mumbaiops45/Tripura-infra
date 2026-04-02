@@ -38,7 +38,7 @@ const About = () => {
        
 
           <p className="leading-relaxed">
-            At <strong>Tripura Infra Developers</strong>, we believe that every dream deserves a solid foundation — a home built with <strong>trust</strong>, <strong>precision</strong>, and <strong>innovation</strong>. With over <strong>20 years of experience</strong> in the construction and real estate industry, we’ve earned our reputation as one of the most <strong>reliable</strong> and <strong>forward-thinking developers</strong> in Hyderabad.
+            At <strong>Tripura Infra Developers</strong>, we believe that every dream deserve a solid foundation — a home built with <strong>trust</strong>, <strong>precision</strong>, and <strong>innovation</strong>. With over <strong>20 years of experience</strong> in the construction and real estate industry, we’ve earned our reputation as one of the most <strong>reliable</strong> and <strong>forward-thinking developers</strong> in Hyderabad.
             <br /><br />
             Our journey began with a simple vision: to transform the way people experience construction. Over the years, we have combined <strong>engineering excellence</strong>, <strong>modern design</strong>, and <strong>customer-centric values</strong> to create homes and commercial spaces that go beyond just walls and ceilings — they embody <strong>comfort</strong>, <strong>safety</strong>, and <strong>long-term value</strong>.
             <br /><br />
