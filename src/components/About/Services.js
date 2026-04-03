@@ -70,7 +70,7 @@ const ServicesLayout = () => {
       </h2>
 
       {/* MAIN LAYOUT */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[260px_1fr] gap-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[3fr_7fr] gap-10">
 
         {/* LEFT SIDEBAR */}
         <div className="flex flex-col gap-4">
@@ -108,12 +108,12 @@ const ServicesLayout = () => {
                             className="flex flex-col items-center gap-4 md:gap-3 border border-gray-200 rounded-xl p-4 hover:shadow-md transition"
                           >
                             {/* IMAGE */}
-                            <div className="relative w-full h-52 rounded-lg overflow-hidden shrink-0">
+                            <div className="relative w-full h-58 rounded-lg overflow-hidden shrink-0">
                               <Image
                                 src={subItem.img}
                                 alt={subItem.name}
                                 fill
-                                className="object-cover"
+                                className="object-fill"
                               />
                             </div>
 

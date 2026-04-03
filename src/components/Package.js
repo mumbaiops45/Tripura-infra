@@ -46,10 +46,10 @@ const OurPackages = () => {
 
         {/* LEFT SIDEBAR */}
         <div>
-          <p className="mb-2 font-bold text-[var(--primery)]">
+          <p className="mb-2 font-bold text-black">
             click to see packages
           </p>
-          <div className="md:h-full flex md:flex-col gap-3 overflow-x-auto md:overflow-visible">
+          <div className="md:h-full flex flex-col gap-3 ">
             {[
               { key: "residential", label: "Residential Construction" },
               { key: "commercial", label: "Commercial" },
@@ -58,7 +58,7 @@ const OurPackages = () => {
               <button
                 key={item.key}
                 onClick={() => setActive(item.key)}
-                className={`backdrop-blur-xl px-4 py-3 md:h-[30%] text-left rounded-lg border transition whitespace-nowrap
+                className={`font-bold text-center backdrop-blur-xl px-4 py-3 md:h-[30%] md:text-left rounded-lg border transition whitespace-nowrap
                 ${active === item.key
                     ? "bg-[var(--primary)] text-white"
                     : "bg-white"

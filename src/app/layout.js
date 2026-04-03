@@ -5,6 +5,7 @@ import FooterDesygn from "@/components/FooterDesygn";
 import ScrollToTop from "@/components/ScrollToTop";
 import WhatsappChat from "@/components/WhatsappChat";
 import ScrollProgress from "@/components/ScrollProgress";
+import CallButton from "@/components/CallButton";
 
 
 export const metadata = {
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
   <FooterDesygn />
    <ScrollToTop/>
      <WhatsappChat/>
+     <CallButton />
         <Footer />
         </body>
     </html>

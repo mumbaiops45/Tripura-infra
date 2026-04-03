@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function WhatsappChat() {
   return (
     <Link
-  href="https://wa.me/918447117195"
+  href="https://wa.me/918790806677"
   target="_blank"
   rel="noopener noreferrer"
   className="fixed bottom-12 left-6 flex justify-center items-center

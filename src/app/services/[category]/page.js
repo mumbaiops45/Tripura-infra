@@ -2,6 +2,7 @@
 
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import { AlertTriangle,CheckCircle,Star  } from "lucide-react";
 
 const servicesData = [
   {
@@ -13,6 +14,7 @@ const servicesData = [
         name: "Home",
         img: "/home.webp",
         title: "Custom Home Construction",
+        background:"False",
         description: (
           <>
             We design and build <strong>personalized homes</strong> with superior materials, ensuring comfort, safety, and lasting structural strength.
@@ -39,6 +41,7 @@ const servicesData = [
         name: "Luxury Villas",
         img: "/Luxury villas.webp",
         title: "Luxury Villa Construction",
+        background:"True",
         description: (
           <>
             We design and build <strong>premium luxury villas</strong> with elegant architecture, modern amenities, and high-quality finishes for a refined living experience.
@@ -65,6 +68,7 @@ const servicesData = [
         name: "Residential Apartments",
         img: "/Residential Appartments.webp",
         title: "Apartment Construction",
+        background:"False",
         description: (
           <>
             We construct <strong>thoughtfully planned residential apartments</strong> combining space efficiency, elegant interiors, and durable construction quality.
@@ -91,6 +95,7 @@ const servicesData = [
         name: "Row Houses",
         img: "/Row Houses.webp",
         title: "Row House Construction",
+        background:"True",
         description: (
           <>
             We build <strong>smartly designed row villas</strong> offering privacy, natural light, and functional layouts that balance comfort and style.
@@ -124,6 +129,7 @@ const servicesData = [
         name: "High-Rise Towers",
         img: "/High-Rise Towers.webp",
         title: "High-Rise Construction",
+        background:"False",
         description: (
           <>
             We develop <strong>high-rise commercial buildings</strong> with engineering excellence in tall structures, precision design, superior materials, and modern architectural appeal.
@@ -150,6 +156,7 @@ const servicesData = [
         name: "Retail Spaces",
         img: "/Retail Spaces.webp",
         title: "Retail Space Construction",
+        background:"True",
         description: (
           <>
             We build <strong>modern retail and shopping hubs</strong> designed for functionality, visibility, and long-term business growth.
@@ -176,6 +183,7 @@ const servicesData = [
         name: "Hospital Construction",
         img: "/Hospital Construction.webp",
         title: "Healthcare Facility Construction",
+        background:"False",
         description: (
           <>
             We construct <strong>safe, compliant, and efficiently designed healthcare facilities</strong> with smart planning and durable infrastructure built for long-term use.
@@ -202,6 +210,7 @@ const servicesData = [
         name: "P.G. Hostels",
         img: "/P.G. Hostels.webp",
         title: "Hostel Construction",
+        background:"True",
         description: (
           <>
             We build <strong>comfortable, cost-effective, and low-maintenance hostel buildings</strong> designed for maximum utility and space optimization.
@@ -235,6 +244,7 @@ const servicesData = [
         name: "Industrial Civil Works",
         img: "/Industrial Civil Works.webp",
         title: "Industrial Civil Construction",
+        background:"False",
         description: (
           <>
             We handle <strong>end-to-end civil construction for industrial facilities</strong> with robust foundations, heavy-duty structures, and precision engineering.
@@ -261,6 +271,7 @@ const servicesData = [
         name: "PEB Sheds",
         img: "/PEB Sheds.webp",
         title: "Pre-Engineered Building Sheds",
+        background:"True",
         description: (
           <>
             We construct <strong>durable, cost-effective steel shed solutions</strong> designed for quick installation and long-term performance across industrial and storage applications.
@@ -283,6 +294,60 @@ const servicesData = [
           items: ["Durable sheds", "Optimized layout", "Quick assembly"],
         },
       },
+      {
+  name: "Warehouses",
+  img: "/Warehouses.webp",
+  title: "Warehouse Construction",
+  background: "False",
+  description: (
+    <>
+      Spacious, efficient, and <strong>high-strength warehouse constructions</strong> ideal for logistics, storage, and manufacturing needs.
+      <br />
+      We design warehouses with <strong>optimized layouts, durable flooring, and structural strength</strong> to handle heavy loads and operations.
+      <br />
+      Our solutions ensure <strong>maximum space utilization, easy accessibility, and long-term reliability</strong>.
+    </>
+  ),
+  painPoints: {
+    title: "Warehouse Challenges",
+    points: ["Space inefficiency", "Weak structure", "Poor logistics flow"],
+    solution: "We design strong, spacious, and well-optimized warehouses for smooth operations.",
+  },
+  services: {
+    title: "What You Get",
+    items: ["Layout planning", "Heavy-duty flooring", "Structural engineering", "Execution management"],
+  },
+  features: {
+    items: ["High load capacity", "Optimized space", "Durable build", "Efficient layout"],
+  },
+},
+{
+  name: "Banquet Halls",
+  img: "/Banquet Halls.webp",
+  title: "Banquet Hall Construction",
+  background: "True",
+  description: (
+    <>
+      Elegant and functional <strong>event halls</strong> built with high ceilings, sound design, and durable structural systems.
+      <br />
+      Our designs focus on <strong>spacious layouts, ventilation, and aesthetic appeal</strong> for hosting large gatherings.
+      <br />
+      We deliver <strong>premium-quality banquet spaces</strong> that enhance guest experience and long-term usability.
+    </>
+  ),
+  painPoints: {
+    title: "Event Space Issues",
+    points: ["Poor acoustics", "Limited space", "Weak infrastructure"],
+    solution: "We build spacious, acoustically optimized, and durable banquet halls.",
+  },
+  services: {
+    title: "What You Get",
+    items: ["Large span structures", "Acoustic planning", "Interior-ready design"],
+  },
+  features: {
+    items: ["High ceilings", "Elegant design", "Strong structure", "Event-ready layout"],
+  },
+}
     ],
   },
   {
@@ -294,6 +359,7 @@ const servicesData = [
         name: "Residential Interiors",
         img: "/Residential Interiors.webp",
         title: "Residential Interior Design",
+        background:"False",
         description: (
           <>
             We create <strong>elegant, functional, and personalized interior designs</strong> that enhance comfort, style, and everyday living in your home.
@@ -316,6 +382,33 @@ const servicesData = [
           items: ["Stylish interiors", "Functional spaces", "Budget-conscious planning"],
         },
       },
+      {
+  name: "Commercial Interiors",
+  img: "/Commercial Interiors.webp",
+  title: "Commercial Interior Design",
+  background: "True",
+  description: (
+    <>
+      Professional interiors for <strong>offices and retail spaces</strong> focused on efficiency, branding, and modern aesthetics.
+      <br />
+      We create <strong>functional layouts, brand-aligned designs, and productive workspaces</strong> tailored to business needs.
+      <br />
+      Our solutions ensure <strong>optimized space usage, modern appeal, and long-lasting interior quality</strong>.
+    </>
+  ),
+  painPoints: {
+    title: "Commercial Interior Issues",
+    points: ["Unproductive layouts", "Weak branding", "Poor space usage"],
+    solution: "We design efficient, brand-focused, and modern commercial interiors.",
+  },
+  services: {
+    title: "What You Get",
+    items: ["Office layout design", "Brand-focused interiors", "Space planning", "Execution"],
+  },
+  features: {
+    items: ["Modern design", "Efficient layout", "Brand identity", "Professional finish"],
+  },
+}
     ],
   },
   {
@@ -327,6 +420,7 @@ const servicesData = [
         name: "Construction Oversight",
         img: "/Project Management.webp",
         title: "Project Management Services",
+        background:"False",
         description: (
           <>
             We provide <strong>end-to-end project management</strong> for construction projects ensuring timely delivery, quality control, and budget adherence.
@@ -356,32 +450,33 @@ const servicesData = [
     title: "Renovation & Extension Work",
     slug: "renovation-extension-work",
     items: [
-      {
-        name: "Home Renovation",
-        img: "/Renovation.webp",
-        title: "Renovation & Extension Services",
-        description: (
-          <>
-            We offer <strong>comprehensive renovation and extension solutions</strong> for residential and commercial spaces.
-            <br />
-            Our team updates layouts, modernizes finishes, and expands usable space while maintaining structural integrity.
-            <br />
-            Ensuring minimal disruption, we deliver <strong>transformative, functional, and high-quality upgrades</strong> that enhance your property value.
-          </>
-        ),
-        painPoints: {
-          title: "Renovation Challenges",
-          points: ["Disruption to daily life", "Structural complications", "Budget management"],
-          solution: "We carefully plan and execute renovations to minimize inconvenience while ensuring top-quality results.",
-        },
-        services: {
-          title: "What You Get",
-          items: ["Structural assessment", "Design updates", "Space optimization", "Material selection guidance"],
-        },
-        features: {
-          items: ["Efficient execution", "Minimal disruption", "Quality finishes", "Functional design"],
-        },
-      },
+     {
+  name: "Extension Work",
+  img: "/Extension Work.webp",
+  title: "Building Extension Services",
+  background: "False",
+  description: (
+    <>
+      We specialize in <strong>extending existing homes or buildings</strong> with seamless structural integration, maintaining strength, design consistency, and modern aesthetics.
+      <br />
+      Our team ensures that every extension blends perfectly with the original structure while enhancing <strong>space, functionality, and overall property value</strong>.
+      <br />
+      From planning to execution, we deliver <strong>safe, durable, and well-integrated extensions</strong> with minimal disruption.
+    </>
+  ),
+  painPoints: {
+    title: "Extension Challenges",
+    points: ["Structural mismatch", "Design inconsistency", "Space planning issues"],
+    solution: "We ensure seamless integration, proper planning, and structural strength in every extension project.",
+  },
+  services: {
+    title: "What You Get",
+    items: ["Structural extension planning", "Design integration", "Space expansion", "Execution management"],
+  },
+  features: {
+    items: ["Seamless integration", "Strong structure", "Modern design", "Value addition"],
+  },
+}
     ],
   },
 ];
@@ -420,16 +515,16 @@ export default async function ServiceCategoryPage({ params }) {
         <h1 className="">
           <span className="text-[var(--primary)]">{service.title}</span>
         </h1>
-        <p className="  mx-auto">
-          Explore our range of {service.title.toLowerCase()} solutions built
-          for quality, reliability, and your unique needs.
-        </p>
       </div>
 
       {/* ITEMS */}
-      <div className="max-w-7xl mx-auto px-4 md:px-15 flex flex-col gap-8 py-16">
+      <div className="max-w-7xl mx-auto  flex flex-col gap-8 pt-10">
+        <p className="px-4 md:px-15 font-medium">
+          Explore our range of {service.title.toLowerCase()} solutions built
+          for quality, reliability, and your unique needs.
+        </p>
         {service.items.map((item, index) => (
-          <section key={index} className="flex flex-col gap-10">
+          <section key={index} className={`flex flex-col gap-10 px-4 md:px-15 ${item.background==="True"?"bg-gradient-to-b from-[var(--primary)]/5 to-transparent":"white"}`}>
 
             {/* H2 — Item Name */}
             <div className="flex items-center gap-4">   
@@ -471,10 +566,10 @@ export default async function ServiceCategoryPage({ params }) {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
               {/* Card 1 — Pain Points */}
-              <div className=" border border-red-100 rounded-xl p-5 flex flex-col gap-3">
-                <div className="flex items-center gap-2">
-                  <span className="w-3 h-3 rounded-full bg-black inline-block shrink-0" />
-                  <h4 className="font-semibold  text-sm md:text-base">
+              <div className="  shadow-md hover:shadow-xl rounded-xl p-5 flex flex-col gap-3">
+                <div className="flex items-start gap-2">
+                  <AlertTriangle className="mt-1 w-5 h-5 text-red-500" />
+                  <h4 className="font-semibold   text-sm md:text-base">
                     {item.painPoints.title}
                   </h4>
                 </div>
@@ -487,14 +582,14 @@ export default async function ServiceCategoryPage({ params }) {
                   ))}
                 </ul>
                 <p className="text-xs text-green-700 bg-green-50 border border-green-100 rounded-lg p-2 mt-auto">
-                  ✅ {item.painPoints.solution}
+                   {item.painPoints.solution}
                 </p>
               </div>
 
               {/* Card 2 — Services */}
-              <div className=" border border-blue-100 rounded-xl p-5 flex flex-col gap-3">
+              <div className="shadow-md hover:shadow-xl rounded-xl p-5 flex flex-col gap-3">
                 <div className="flex items-center gap-2">
-                  <span className="w-3 h-3 rounded-full bg-black inline-block shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-green-500" />
                   <h4 className="font-semibold  text-sm md:text-base">
                     {item.services.title}
                   </h4>
@@ -502,7 +597,7 @@ export default async function ServiceCategoryPage({ params }) {
                 <ul className="flex flex-col gap-2">
                   {item.services.items.map((s, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm ">
-                      <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-black shrink-0" />
+                      <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" />
                       {s}
                     </li>
                   ))}
@@ -510,9 +605,9 @@ export default async function ServiceCategoryPage({ params }) {
               </div>
 
               {/* Card 3 — Features */}
-              <div className=" border border-[var(--primary)]/20 rounded-xl p-5 flex flex-col gap-3">
+              <div className=" shadow-md hover:shadow-xl rounded-xl p-5 flex flex-col gap-3">
                 <div className="flex items-center gap-2">
-                  <span className="w-3 h-3 rounded-full bg-black inline-block shrink-0" />
+                   <Star className="w-5 h-5 text-yellow-500" />
                   <h4 className="font-semibold  text-sm md:text-base">
                     Key Features
                   </h4>
@@ -520,7 +615,7 @@ export default async function ServiceCategoryPage({ params }) {
                 <ul className="flex flex-col gap-2">
                   {item.features.items.map((f, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
-                      <span className="text-black mt-0.5 shrink-0">✦</span>
+                      <span className="text-yellow-400 mt-0.5 shrink-0">✦</span>
                       {f}
                     </li>
                   ))}
