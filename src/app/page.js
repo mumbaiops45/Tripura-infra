@@ -145,7 +145,7 @@ export default function Home() {
         </div>
         <CardList cards={cardData} />
       </section>
-      <section id='' className="complate_project w-full py-15 px-6 md:px-15">
+      <section id='project' className="complate_project w-full py-15 px-6 md:px-15">
         <div className="">
 
           <h2 className="inline-block mb-10 pl-4 pr-4 py-2 border-l-4 border-[var(--primary)] bg-gradient-to-r from-[var(--secondary)]/15 to-transparent">

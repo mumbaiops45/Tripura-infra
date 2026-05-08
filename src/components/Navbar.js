@@ -85,7 +85,7 @@ const Navbar = () => {
                   <button
                     className={`flex items-center gap-1 transition ${
                       pathname.startsWith("/services")
-                        ? "text-[var(--primary)]"
+                        ? "text-[var(--primary)] border-b-2 border-[var(--primary)]"
                         : "text-black group-hover:text-[var(--primary)]"
                     }`}
                   >

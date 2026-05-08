@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 
 const slides = [
@@ -9,8 +9,9 @@ const slides = [
     tag: "Construction",
     title: "Building Strong Foundations",
     description: "We deliver high-quality construction solutions.",
-    poster:"/poster.png",
-    button: "Explore",
+    poster: "/poster.png",
+    button: "Contact us",
+    link :"/contact",
   },
   {
     id: 2,
@@ -18,8 +19,9 @@ const slides = [
     tag: "Commercial",
     title: "Modern Commercial Spaces",
     description: "We build spaces for business growth.",
-     poster:"/poster.png",
+    poster: "/poster.png",
     button: "View Projects",
+    link:"#project",
   },
   {
     id: 3,
@@ -27,8 +29,9 @@ const slides = [
     tag: "Residential",
     title: "Your Dream Home",
     description: "We create beautiful living spaces.",
-     poster:"/poster.png",
+    poster: "/poster.png",
     button: "Get Quote",
+    link : "/contact",
   },
 ];
 
@@ -51,17 +54,17 @@ const Hero = () => {
   }, []);
 
   useEffect(() => {
-  const handleVisibility = () => {
-    if (document.hidden) {
-      videoRefs.current[current]?.pause();
-    } else {
-      videoRefs.current[current]?.play().catch(() => {});
-    }
-  };
+    const handleVisibility = () => {
+      if (document.hidden) {
+        videoRefs.current[current]?.pause();
+      } else {
+        videoRefs.current[current]?.play().catch(() => { });
+      }
+    };
 
-  document.addEventListener("visibilitychange", handleVisibility);
-  return () => document.removeEventListener("visibilitychange", handleVisibility);
-}, [current]);
+    document.addEventListener("visibilitychange", handleVisibility);
+    return () => document.removeEventListener("visibilitychange", handleVisibility);
+  }, [current]);
 
   // Reset loop
   useEffect(() => {
@@ -82,7 +85,7 @@ const Hero = () => {
 
       if (index === current) {
         video.currentTime = 0;
-        video.play().catch(() => {});
+        video.play().catch(() => { });
       } else {
         video.pause();
       }
@@ -93,25 +96,24 @@ const Hero = () => {
     <section className="relative w-full h-[60vh] md:h-[65vh] xl:h-[500px] overflow-hidden">
 
       <div
-        className={`flex h-full ${
-          transition ? "transition-transform duration-700 ease-in-out" : ""
-        }`}
+        className={`flex h-full ${transition ? "transition-transform duration-700 ease-in-out" : ""
+          }`}
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {extendedSlides.map((slide, index) => (
           <div key={index} className="w-full flex-shrink-0 relative h-full">
 
             {/* ✅ Video FIX */}
-          <video
-  ref={(el) => (videoRefs.current[index] = el)}
- src={index === current ? slide.video : undefined}
-  muted
-  loop
-  playsInline
-  preload="none"  
-    poster={slide.poster}  // ✅ IMPORTANT
-  className="w-full h-full object-cover"
-/>
+            <video
+              ref={(el) => (videoRefs.current[index] = el)}
+              src={index === current ? slide.video : undefined}
+              muted
+              loop
+              playsInline
+              preload="none"
+              poster={slide.poster}  // ✅ IMPORTANT
+              className="w-full h-full object-cover"
+            />
 
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/40"></div>
@@ -131,9 +133,12 @@ const Hero = () => {
                   {slide.description}
                 </p>
 
-                <button className="mt-6 primary-btn px-6 py-3 rounded-xl">
-                  {slide.button}
-                </button>
+                <Link
+  href={slide.link} // or "/your-page"
+  className="mt-6 primary-btn px-6 py-3 rounded-xl inline-block text-center"
+>
+  {slide.button}
+</Link>
               </div>
             </div>
 
@@ -147,11 +152,10 @@ const Hero = () => {
           <div
             key={index}
             onClick={() => setCurrent(index)}
-            className={`cursor-pointer rounded-full bg-white transition-all ${
-              current % slides.length === index
+            className={`cursor-pointer rounded-full bg-white transition-all ${current % slides.length === index
                 ? "w-8 h-2"
                 : "w-2 h-2 opacity-60"
-            }`}
+              }`}
           />
         ))}
       </div>

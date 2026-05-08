@@ -53,9 +53,9 @@ export default function ContactForm() {
   const iconSize = 18; // ✅ same size everywhere
 
   return (
-    <div className="w-full ">
+    <div className="">
       
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 bg-white shadow-xl rounded-2xl overflow-hidden">
+      <div className="grid md:grid-cols-2 gap-10 bg-white shadow-xl rounded-2xl overflow-hidden">
         
         {/* LEFT SIDE */}
         <div className="bg-[var(--primary)] text-white p-8 flex flex-col justify-center">
@@ -93,7 +93,7 @@ export default function ContactForm() {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="p-8">
+        <div className="p-4 md:p-8">
           <form onSubmit={handleSubmit} className="space-y-5">
             
             <div className="relative">
@@ -103,7 +103,7 @@ export default function ContactForm() {
                 onChange={handleChange}
                 required
                 placeholder="Enter your name"
-                className="w-[80vw] md:w-full border border-gray-300 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:border-[var(--primary)]"
+                className="w-full border border-gray-300 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:border-[var(--primary)]"
               />
             </div>
 
@@ -114,7 +114,7 @@ export default function ContactForm() {
                 onChange={handleChange}
                 required
                 placeholder="Enter your email"
-                className="w-[80vw] md:w-full border border-gray-300 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:border-[var(--primary)]"
+                className="w-full border border-gray-300 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:border-[var(--primary)]"
               />
               {error && (
                 <p className="text-red-500 text-xs mt-1">{error}</p>
@@ -129,13 +129,13 @@ export default function ContactForm() {
                 required
                 rows="4"
                 placeholder="Write your message..."
-                className="w-[80vw] md:w-full border border-gray-300 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:border-[var(--primary)]"
+                className="w-full border border-gray-300 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:border-[var(--primary)]"
               />
             </div>
 
             <button
               type="submit"
-              className="w-[80vw] md:w-full bg-[var(--primary)] text-white py-3 rounded-lg font-semibold hover:opacity-90 transition"
+              className="w-full bg-[var(--primary)] text-white py-3 rounded-lg font-semibold hover:opacity-90 transition"
             >
               Send Message
             </button>
